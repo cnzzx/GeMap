@@ -5,7 +5,7 @@
 <div align="center">
 <h3>Online Vectorized HD Map Construction Using Geometry</h3>
 
-[Zhixin Zhang](https://github.com/cnzzx)<sup>1</sup>, [Yiyuan Zhang](https://invictus717.github.io/)<sup>2</sup>, [Xiaohan Ding](https://dingxiaohan.xyz/)<sup>3</sup>, [Fusheng Jin](https://cs.bit.edu.cn/szdw/jsml/fjs/jfs/index.htm)<sup>1\*</sup>, [Xiangyu Yue](http://people.eecs.berkeley.edu/~xyyue/)<sup>2</sup>
+[Zhixin Zhang](https://github.com/cnzzx)<sup>1</sup>, [Yiyuan Zhang](https://invictus717.github.io/)<sup>2</sup>, [Xiaohan Ding](https://dingxiaohan.xyz/)<sup>3</sup>, [Fusheng Jin](https://cs.bit.edu.cn/szdw/jsml/fjs/jfs/index.htm)<sup>1\*</sup>, [Xiangyu Yue](http://xyue.io/)<sup>2</sup>
  
 <sup>1</sup>Beijing Institute of Technology, &nbsp;
 <sup>2</sup>CUHK, &nbsp;
