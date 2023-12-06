@@ -11,7 +11,7 @@
 <sup>2</sup>CUHK, &nbsp;
 <sup>3</sup>Tencent AI Lab
 
-[website](https://invictus717.github.io/GeMap/) | [paper](xxx) | [video](https://www.youtube.com/watch?v=dU4XN4GQ1y4)
+[Website](https://invictus717.github.io/GeMap/) | [arXiv](xxx) | [YouTube](https://www.youtube.com/watch?v=dU4XN4GQ1y4) | [Bilibili](https://www.bilibili.com/video/BV1qN4y1e7hL/?vd_source=96a766e4a548cf05b04bf247d9824a01)
 
 </div>
 
