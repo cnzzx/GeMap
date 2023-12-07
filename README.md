@@ -11,7 +11,7 @@
 <sup>2</sup>CUHK, &nbsp;
 <sup>3</sup>Tencent AI Lab
 
-[Website](https://invictus717.github.io/GeMap/) | [arXiv](xxx) | [YouTube](https://www.youtube.com/watch?v=dU4XN4GQ1y4) | [Bilibili](https://www.bilibili.com/video/BV1qN4y1e7hL/?vd_source=96a766e4a548cf05b04bf247d9824a01)
+[Website](https://invictus717.github.io/GeMap/) | [arXiv]([xxx](https://arxiv.org/abs/2312.03341)) | [YouTube](https://www.youtube.com/watch?v=dU4XN4GQ1y4) | [Bilibili](https://www.bilibili.com/video/BV1qN4y1e7hL/?vd_source=96a766e4a548cf05b04bf247d9824a01)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 ## News
 
-- **(xxxx/xx/xx)** We released the first version of GeMap (with pre-trained checkpoints and evaluation).
-- **(xxxx/xx/xx)** GeMap is released on [arXiv](xxx).
+- **(2023/12/7)** We released the first version of GeMap (with pre-trained checkpoints and evaluation).
+- **(2023/12/7)** GeMap is released on [arXiv](xxx).
 
 ## Motivation
 
@@ -103,11 +103,13 @@ GeMap is based on [mmdetection3d](https://github.com/open-mmlab/mmdetection3d). 
 If GeMap is useful or relevant to your research, please kindly recognize our contributions by citing our paper:
 
 ```bibtex
-@inproceedings{xxx,
-  title={Online Vectorized HD Map Construcing using Geometry},
-  author={xxx},
-  booktitle={xxx},
-  year={xxx}
+@misc{zhang2023online,
+  title={Online Vectorized HD Map Construction using Geometry}, 
+  author={Zhixin Zhang and Yiyuan Zhang and Xiaohan Ding and Fusheng Jin and Xiangyu Yue},
+  year={2023},
+  eprint={2312.03341},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
 }
 ```
 
