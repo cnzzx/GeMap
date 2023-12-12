@@ -71,25 +71,26 @@ class GeometryDecoupledAttention(BaseModule):
             The input query is of shape (num_ins * num_pts, B, embed_dims)
         """
         device = query.device
-        intra_mask = torch.zeros((self.num_ins * self.num_pts, self.num_ins * self.num_pts), device=device, dtype=torch.bool)
-        inter_mask = torch.ones((self.num_ins * self.num_pts, self.num_ins * self.num_pts), device=device, dtype=torch.bool)
+        intra_mask = torch.ones((self.num_ins * self.num_pts, self.num_ins * self.num_pts), device=device, dtype=torch.bool)
+        inter_mask = torch.zeros((self.num_ins * self.num_pts, self.num_ins * self.num_pts), device=device, dtype=torch.bool)
         for i in range(self.num_ins):
-            intra_mask[i*self.num_pts:(i+1)*self.num_pts, i*self.num_pts:(i+1)*self.num_pts] = True
-            inter_mask[i*self.num_pts:(i+1)*self.num_pts, i*self.num_pts:(i+1)*self.num_pts] = False
-        out_intra, _ = self.intra_attention(
+            intra_mask[i*self.num_pts:(i+1)*self.num_pts, i*self.num_pts:(i+1)*self.num_pts] = False
+            inter_mask[i*self.num_pts:(i+1)*self.num_pts, i*self.num_pts:(i+1)*self.num_pts] = True
+
+        out_inter, _ = self.inter_attention(
             query = query,
             key = query,
             value = query,
-            attn_mask = intra_mask,
-        )
-        out_intra = self.intra_norm1(out_intra) + query
-        out_intra = self.intra_norm2(self.intra_ffn(out_intra)) + out_intra
-        out_inter, _ = self.inter_attention(
-            query = out_intra,
-            key = out_intra,
-            value = out_intra,
             attn_mask = inter_mask,
         )
-        out_inter = self.inter_norm1(out_inter) + out_intra
+        out_inter = self.inter_norm1(out_inter) + query
         out_inter = self.inter_norm2(self.inter_ffn(out_inter)) + out_inter
-        return out_inter
+        out_intra, _ = self.intra_attention(
+            query = out_inter,
+            key = out_inter,
+            value = out_inter,
+            attn_mask = intra_mask,
+        )
+        out_intra = self.intra_norm1(out_intra) + out_inter
+        out_intra = self.intra_norm2(self.intra_ffn(out_intra)) + out_intra
+        return out_intra
