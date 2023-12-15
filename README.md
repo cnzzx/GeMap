@@ -100,7 +100,7 @@ GeMap is based on [mmdetection3d](https://github.com/open-mmlab/mmdetection3d). 
 
 ## Citation
 
-If GeMap is useful or relevant to your research, please kindly recognize our contributions by citing our paper:
+If the paper and code help your research, please kindly cite:
 
 ```bibtex
 @misc{zhang2023online,
