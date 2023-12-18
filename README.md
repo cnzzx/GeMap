@@ -103,13 +103,11 @@ GeMap is based on [mmdetection3d](https://github.com/open-mmlab/mmdetection3d). 
 If the paper and code help your research, please kindly cite:
 
 ```bibtex
-@misc{zhang2023online,
-  title={Online Vectorized HD Map Construction using Geometry}, 
-  author={Zhixin Zhang and Yiyuan Zhang and Xiaohan Ding and Fusheng Jin and Xiangyu Yue},
-  year={2023},
-  eprint={2312.03341},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+@article{zhang2023online,
+  title={Online Vectorized HD Map Construction using Geometry},
+  author={Zhang, Zhixin and Zhang, Yiyuan and Ding, Xiaohan and Jin, Fusheng and Yue, Xiangyu},
+  journal={arXiv preprint arXiv:2312.03341},
+  year={2023}
 }
 ```
 
