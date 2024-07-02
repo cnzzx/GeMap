@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-<h3>Online Vectorized HD Map Construction Using Geometry</h3>
+<h3>[ECCV'24] Online Vectorized HD Map Construction Using Geometry </h3>
 
 [Zhixin Zhang](https://github.com/cnzzx)<sup>1</sup>, [Yiyuan Zhang](https://invictus717.github.io/)<sup>2</sup>, [Xiaohan Ding](https://dingxiaohan.xyz/)<sup>3</sup>, [Fusheng Jin](https://cs.bit.edu.cn/szdw/jsml/fjs/jfs/index.htm)<sup>1\*</sup>, [Xiangyu Yue](http://xyue.io/)<sup>2</sup>
  
@@ -20,7 +20,9 @@
 </div>
 
 ## News
+We're working on more powerful and efficient models, please stay tuned.
 
+- **(2024/7/2)** GeMap is accepted by ECCV 2024 and we release a new GeMap model with **76.0 mAP**.
 - **(2023/12/7)** We released the first version of GeMap (with pre-trained checkpoints and evaluation).
 - **(2023/12/7)** GeMap is released on [arXiv](xxx).
 
@@ -54,6 +56,7 @@ This work contributes from two perspectives:
 | GeMap | full | R50 | 110 | 69.4 | 13.3 | [config](projects/configs/gemap/gemap_full_r50_110ep.py) | [model](https://drive.google.com/file/d/1-tSNztiVRXXlofiVStj3KzLTG1sbtKtF/view?usp=drive_link) |
 | GeMap | full | Swin-T | 110 | 72.0 | 10.0 | [config](projects/configs/gemap/gemap_full_swint_110ep.py) | [model](https://drive.google.com/file/d/1f4vEaC1d73MLGzl_5wfX5QX3fgPsGkYC/view?usp=drive_link) |
 | GeMap | full | V2-99 | 110 | 72.2 | 9.5 | [config](projects/configs/gemap/gemap_full_vov99_110ep.py) | [model](https://drive.google.com/file/d/1_KZAqMgg87R8k_ufpJC38O1CtjFcsURL/view?usp=drive_link) |
+| GeMap | full | V2-99(DD3D) | 110 | 76.0 | 9.5 | [config](projects/configs/gemap/gemap_full_vov99_dd3d_110ep.py) | [model](https://drive.google.com/file/d/17VlL5fqFHu5WmqIKeUoWEmbzWF5UmbyX/view?usp=drive_link) |
 
 
 ### Argoverse 2
@@ -89,9 +92,9 @@ GeMap exhibits more robust predictions in occluded and rotated scenarios, especi
 - [Visualization](./docs/visualization.md)
 
 ## TODO
-- [ ] Merge and clean up dataset pipelines.
-- [ ] Add LiDAR support to all configurations.
-- [ ] Try more backbones on Argoverse 2.
+- [ ] Faster implementation for inference of GeMap.
+- [ ] More powerful LiDAR and Camera + LiDAR models.
+- [ ] Lighter and faster models with 30+ FPS.
 
 ## Acknowledgements
 

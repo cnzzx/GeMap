@@ -69,7 +69,9 @@ cd ckpts
 wget https://download.pytorch.org/models/resnet50-19c8e357.pth
 ```
 
-For Swin-Transformer-Tiny and VoVNet-V2-99, you can download corresponding weights pretrained on ImageNet-1k from the official github:
+For Swin-Transformer-Tiny and VoVNet-V2-99, you can download corresponding weights from the official github:
 
-- [Swin-Transformer](https://github.com/microsoft/Swin-Transformer)
-- [VoVNet-V2](https://github.com/youngwanLEE/vovnet-detectron2)
+- [Swin-Transformer](https://github.com/microsoft/Swin-Transformer) pretrained on ImageNet
+- [VoVNet-V2-99](https://github.com/youngwanLEE/vovnet-detectron2) pretrained on ImageNet
+
+- [VoVNet-V2-99 (DD3D)](https://github.com/TRI-ML/dd3d) pretrained on DDAD15M
