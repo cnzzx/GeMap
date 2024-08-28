@@ -49,23 +49,23 @@ This work contributes from two perspectives:
 
 ### NuScenes
 
-|   Model   | Objective | Backbone | Epoch | mAP  | FPS  | Config | Checkpoint |
+|   Model   | Objective | Backbone | Epoch | mAP  | FPS  | Config / Log | Checkpoint |
 | :-------: | :------: | :--: | :--: | :--: | :--: | :--: | :--: |
-| GeMap | simple | R50 | 110 | 62.7 | 15.6 | [config](projects/configs/gemap/gemap_simple_r50_110ep.py) | [model](https://drive.google.com/file/d/1QNmluapTm_hH-ofMi_QsKXLG2bp38wEW/view?usp=drive_link) |
-| GeMap | simple | Camera(R50) & LiDAR(SEC) | 110 | 66.5 | 6.8 | [config](projects/configs/gemap/gemap_simple_r50_sec_110ep.py) | [model](https://drive.google.com/file/d/1fgHcEcCC2EmUOl8wzqY1Y8lBvG6abXID/view?usp=drive_link) |
-| GeMap | full | R50 | 110 | 69.4 | 13.3 | [config](projects/configs/gemap/gemap_full_r50_110ep.py) | [model](https://drive.google.com/file/d/1-tSNztiVRXXlofiVStj3KzLTG1sbtKtF/view?usp=drive_link) |
-| GeMap | full | Swin-T | 110 | 72.0 | 10.0 | [config](projects/configs/gemap/gemap_full_swint_110ep.py) | [model](https://drive.google.com/file/d/1f4vEaC1d73MLGzl_5wfX5QX3fgPsGkYC/view?usp=drive_link) |
-| GeMap | full | V2-99 | 110 | 72.2 | 9.5 | [config](projects/configs/gemap/gemap_full_vov99_110ep.py) | [model](https://drive.google.com/file/d/1_KZAqMgg87R8k_ufpJC38O1CtjFcsURL/view?usp=drive_link) |
-| GeMap | full | V2-99(DD3D) | 110 | 76.0 | 9.5 | [config](projects/configs/gemap/gemap_full_vov99_dd3d_110ep.py) | [model](https://drive.google.com/file/d/17VlL5fqFHu5WmqIKeUoWEmbzWF5UmbyX/view?usp=drive_link) |
+| GeMap | simple | R50 | 110 | 62.7 | 15.6 | [config](projects/configs/gemap/gemap_simple_r50_110ep.py)/[log](https://drive.google.com/file/d/1OYP1vGdI4H3hdqGAIkmoCnXHiGX-U0sr/view?usp=drive_link) | [model](https://drive.google.com/file/d/1QNmluapTm_hH-ofMi_QsKXLG2bp38wEW/view?usp=drive_link) |
+| GeMap | simple | Camera(R50) & LiDAR(SEC) | 110 | 66.5 | 6.8 | [config](projects/configs/gemap/gemap_simple_r50_sec_110ep.py)/[log](https://drive.google.com/file/d/1aMDhYwHzLT5rINZFgc8R32xIJQdZP4og/view?usp=drive_link) | [model](https://drive.google.com/file/d/1fgHcEcCC2EmUOl8wzqY1Y8lBvG6abXID/view?usp=drive_link) |
+| GeMap | full | R50 | 110 | 69.4 | 13.3 | [config](projects/configs/gemap/gemap_full_r50_110ep.py)/[log](https://drive.google.com/file/d/1zAs7VXFX4C9K8oFeYkw7CLW1wl6Y-CWw/view?usp=drive_link) | [model](https://drive.google.com/file/d/1-tSNztiVRXXlofiVStj3KzLTG1sbtKtF/view?usp=drive_link) |
+| GeMap | full | Swin-T | 110 | 72.0 | 10.0 | [config](projects/configs/gemap/gemap_full_swint_110ep.py)/[log](https://drive.google.com/file/d/1jeTvf1-tFh9l2mz16xy0dMNfG5q9WiJ1/view?usp=drive_link) | [model](https://drive.google.com/file/d/1f4vEaC1d73MLGzl_5wfX5QX3fgPsGkYC/view?usp=drive_link) |
+| GeMap | full | V2-99 | 110 | 72.2 | 9.5 | [config](projects/configs/gemap/gemap_full_vov99_110ep.py)/[log](https://drive.google.com/file/d/11UpYspRr-6naYAIWoxnBPVCjyOxCIon3/view?usp=drive_link) | [model](https://drive.google.com/file/d/1_KZAqMgg87R8k_ufpJC38O1CtjFcsURL/view?usp=drive_link) |
+| GeMap | full | V2-99(DD3D) | 110 | 76.0 | 9.5 | [config](projects/configs/gemap/gemap_full_vov99_dd3d_110ep.py)/[log](https://drive.google.com/file/d/1-GTM3rZ7V7TRkQzC6BDnG1lLsbjslzMU/view?usp=drive_link) | [model](https://drive.google.com/file/d/17VlL5fqFHu5WmqIKeUoWEmbzWF5UmbyX/view?usp=drive_link) |
 
 
 ### Argoverse 2
 
-|   Model   | Objective | Backbone | Epoch | mAP  | FPS  | Config | Checkpoint |
+|   Model   | Objective | Backbone | Epoch | mAP  | FPS  | Config / Log | Checkpoint |
 | :-------: | :------: | :--: | :--: | :--: | :--: | :--: | :--: |
-| GeMap | simple | R50 | 6 | 63.9 | 13.5 | [config](projects/configs/gemap/gemap_av2_simple_r50_6ep.py) | [model](https://drive.google.com/file/d/1H5qIxz5ED6Dnlo9xaOqntTocVQDuPbrZ/view?usp=drive_link) |
-| GeMap | simple | R50 | 24 | 68.2 | 13.5 | [config](projects/configs/gemap/gemap_av2_simple_r50_24ep.py) | [model](https://drive.google.com/file/d/1I9bs7t2AfuNICjqy_Tfpce673tAyrlOB/view?usp=drive_link)
-| GeMap | full | R50 | 24 | 71.8 | 12.1 | [config](projects/configs/gemap/gemap_av2_full_r50_24ep.py) | [model](https://drive.google.com/file/d/1go2xMgjIdLMrKg9mwkaHvvcVVSxlVdFD/view?usp=drive_link) |
+| GeMap | simple | R50 | 6 | 63.9 | 13.5 | [config](projects/configs/gemap/gemap_av2_simple_r50_6ep.py)/[log](https://drive.google.com/file/d/1zrd5uX7XDRyHh8JEIvge053QF-NAYlJQ/view?usp=drive_link) | [model](https://drive.google.com/file/d/1H5qIxz5ED6Dnlo9xaOqntTocVQDuPbrZ/view?usp=drive_link) |
+| GeMap | simple | R50 | 24 | 68.2 | 13.5 | [config](projects/configs/gemap/gemap_av2_simple_r50_24ep.py)/[log](https://drive.google.com/file/d/1sWtTvSSTdnLjVpJJev6YRy3mU6cWeW4W/view?usp=drive_link) | [model](https://drive.google.com/file/d/1I9bs7t2AfuNICjqy_Tfpce673tAyrlOB/view?usp=drive_link)
+| GeMap | full | R50 | 24 | 71.8 | 12.1 | [config](projects/configs/gemap/gemap_av2_full_r50_24ep.py)/[log](https://drive.google.com/file/d/1YCyEBTmW7npMdQu9fyCXOSXKedYlQOWW/view?usp=drive_link) | [model](https://drive.google.com/file/d/1go2xMgjIdLMrKg9mwkaHvvcVVSxlVdFD/view?usp=drive_link) |
 
 \* All models are trained on 8 NVIDIA RTX3090 GPUs. The speed (Frames Per Second, FPS) is evaluated on a single 3090 GPU.
 
